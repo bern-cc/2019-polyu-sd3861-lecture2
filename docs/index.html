@@ -1,39 +1,44 @@
 <!DOCTYPE html>
 <html>
+
 <head>
+    
+
+
+    <meta charset="UTF-8">
+    <title>Bernard</title>
+
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Long+Cang|Mansalva&display=swap" rel="stylesheet">
     <style>
-        h1{
-            font-size: 50px;
-            colour: #ffd926
-        } 
+        body {
+            font-family: 'Mansalva', cursive;
+        }
     </style>
-<meta charset="UTF-8">
-<title>Bernard</title>
-
-<link rel="stylesheet" type="text/css" href="styles.css">
-
 </head>
+
 <body>
-<h1>My Demo</h1>
-<h1>My Demo 2</h1>
+    <h1>My Demo</h1>
+    <h1>My Demo 2</h1>
     <svg class="pop" id="svg" width="300" height="300" viewbox="0 0 100 100">
         <filter id="blur">
-          <feGaussianBlur stdDeviation="1" />
+            <feGaussianBlur stdDeviation="1" />
         </filter>
         <path class="slidein" id="mountain" fill="#ab9457" d="" />
     </svg>
-    
+
     <button onclick="generateMountain()">Draw</button>
 
 
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script type="text/javascript" src="index.js"></script>
-<script type="text/javascript">
-    $(document).ready(function(){
-        $('button').on('click', function(e){
-            alert('drawing completed');
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('button').on('click', function (e) {
+                alert('drawing completed');
+            });
         });
-    });
-</script>
+    </script>
 </body>
+
 </html>
